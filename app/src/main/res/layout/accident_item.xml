@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginTop="@dimen/padding_8dp"
+    android:layout_marginRight="@dimen/padding_8dp"
+    android:layout_marginLeft="@dimen/padding_8dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_8dp"
+        android:paddingEnd="@dimen/padding_8dp"
+        android:paddingStart="@dimen/padding_8dp"
+        android:paddingTop="@dimen/padding_16">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_cause_accident"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold_italic"
+                android:textSize="17sp"
+                tools:text="Collision of two coaster buses" />
+
+            <TextView
+                android:id="@+id/item_route_accident"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_view_regular_size"
+                android:textStyle="italic"
+                tools:text="Along Kaduna/Abuja expressway" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_view_small_size"
+                tools:text="12/02/2018" />
+
+            <TextView
+                android:id="@+id/item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_view_small_size"
+                tools:text="24:02 AM" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

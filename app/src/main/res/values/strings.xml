@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Accident Report</string>
+    <string name="action_settings">Settings</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="sign_in_with_facebook">Sign in with Facebook</string>
+    <string name="sign_in_with_phone">Sign in with Phone Number</string>
+    <string name="iamauser">I am a User</string>
+    <string name="iamanadmin">I am an Admin</string>
+    <string name="accidenta">Accidenta</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="title_activity_add_report">AddReportActivity</string>
+    <string name="occurence">Details of Occurence</string>
+    <string name="report_accident">Report Accident</string>
+    <string name="route_location">Route/Location</string>
+    <string name="cause_of_accident">Cause of Accident eg. Car Crash</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_date_of_occurence">Select Date of Occurence.</string>
+    <string name="description">Narrative Description of Accident</string>
+    <string name="set_time">Tap to set Time of Accident</string>
+    <string name="set_date">Tap to set Date of Accident</string>
+    <string name="upload_image">Upload Image of Accident Site</string>
+    <string name="vehicle_details">Crash Vehicle Details</string>
+    <string name="vehicle_plate_No">Vehicle Plate No</string>
+    <string name="vehicle_model">Vehicle Model</string>
+    <string name="damage_to_vehicle">Damage to Vehicle</string>
+    <string name="nature_injury">Nature of Injury</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="Reporter_name">Reporter\'s Name</string>
+    <string name="phone_number_label">Phone Number</string>
+    <string name="reports">Reports</string>
+    <string name="alerts">Alerts</string>
+    <string name="send_alert">SEND AN ALERT</string>
+    <string name="type_of_alert">Type of Alert</string>
+    <string name="alert_description">Brief Description of Alert</string>
+    <string name="add_location_of_incident">Tap to add location</string>
+    <string name="upload_image_of_alert">Upload Image of Incident</string>
+    <string name="you_haven_t_filled_any_report_yet">File a report below by clicking </string>
+    <string name="title_activity_admin">Admin Dashboard</string>
+    <string name="send_report">Send Report</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="details">Details</string>
+</resources>

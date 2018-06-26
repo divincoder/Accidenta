@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    tools:context=".fragments.SendAlertDialogFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold_italic"
+        android:text="@string/send_alert"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_view_medium_size"
+        android:textStyle="bold"
+        tools:ignore="MissingPrefix" />
+
+
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:id="@+id/alert_type_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/padding_16"
+        app:ms_alignLabels="false"
+        app:ms_arrowColor="@color/red"
+        app:ms_arrowSize="@dimen/activity_horizontal_margin"
+        app:ms_floatingLabelColor="@color/red"
+        app:ms_floatingLabelText="@string/type_of_alert"
+        app:ms_hint="@string/type_of_alert"
+        app:ms_hintColor="@color/colorSecondaryText"
+        app:ms_multiline="true"
+        app:ms_hintView="@layout/spinner_item" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/description_text_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/content_spacing"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:textColorHint="@color/half_black">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/alert_description_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/alert_description"
+            android:inputType="textAutoComplete|textCapWords|textMultiLine"
+            android:textColor="@color/black"
+            android:ems="22"
+            android:textColorHint="@color/colorSecondaryText"
+            android:textSize="@dimen/input_field_size">
+        </android.support.design.widget.TextInputEditText>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/alert_route_text_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/content_spacing"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/padding_16"
+        android:textColorHint="@color/half_black">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/alert_route_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/route_location"
+            android:inputType="textAutoComplete|textCapWords|textMultiLine"
+            android:textColor="@color/black"
+            android:ems="22"
+            android:textColorHint="@color/colorSecondaryText"
+            android:textSize="@dimen/input_field_size">
+        </android.support.design.widget.TextInputEditText>
+    </android.support.design.widget.TextInputLayout>
+
+    <!--<Button-->
+        <!--android:id="@+id/alert_location"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginBottom="@dimen/padding_16"-->
+        <!--android:layout_marginStart="@dimen/padding_16"-->
+        <!--android:layout_marginEnd="@dimen/padding_16"-->
+        <!--android:layout_marginTop="@dimen/padding_16"-->
+        <!--android:background="@drawable/transparent_button_background"-->
+        <!--android:drawablePadding="20dp"-->
+        <!--android:drawableStart="@drawable/ic_location_on_black_24dp"-->
+        <!--android:elevation="10dp"-->
+        <!--android:padding="@dimen/content_padding"-->
+        <!--android:text="@string/add_location_of_incident"-->
+        <!--android:textAlignment="textStart"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textColor="@color/half_black"-->
+        <!--android:textSize="@dimen/text_view_regular_size"-->
+        <!--tools:targetApi="lollipop"-->
+        <!--tools:ignore="RtlCompat" />-->
+
+    <Button
+        android:id="@+id/alertImagePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/padding_16"
+        android:layout_marginStart="@dimen/padding_16"
+        android:layout_marginEnd="@dimen/padding_16"
+        android:layout_marginTop="@dimen/padding_8dp"
+        android:background="@drawable/transparent_button_background"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/ic_image_black_24dp"
+        android:elevation="10dp"
+        android:padding="@dimen/content_padding"
+        android:text="@string/upload_image_of_alert"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/half_black"
+        android:textSize="@dimen/text_view_regular_size"
+        tools:targetApi="lollipop"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/send_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/padding_16"
+        android:layout_marginStart="@dimen/padding_16"
+        android:layout_marginEnd="@dimen/padding_16"
+        android:layout_marginTop="@dimen/padding_8dp"
+        android:background="@drawable/transparent_alert_button_background"
+        android:elevation="10dp"
+        android:padding="@dimen/content_padding"
+        android:text="@string/send_alert"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_view_regular_size"
+        tools:targetApi="lollipop"
+        tools:ignore="RtlCompat" />
+
+</LinearLayout>

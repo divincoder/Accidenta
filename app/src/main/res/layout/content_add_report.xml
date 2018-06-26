@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/padding_16"
+    android:paddingTop="@dimen/padding_16"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.AddReportActivity"
+    tools:showIn="@layout/activity_add_report">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/bio_data_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_grey"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding_16"
+                android:paddingEnd="@dimen/padding_16"
+                android:paddingStart="@dimen/padding_16">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/occurence"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary" />
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/route_text_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:textColorHint="@color/half_black">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/route_text_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/route_location"
+                    android:inputType="textAutoComplete|textCapWords"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorSecondaryText"
+                    android:textSize="@dimen/input_field_size">
+
+                </android.support.design.widget.TextInputEditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/causeAccident_text_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/content_spacing"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:textColorHint="@color/half_black">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/causeOfAccident_text_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cause_of_accident"
+                    android:inputType="textAutoComplete|textCapWords"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorSecondaryText"
+                    android:textSize="@dimen/input_field_size">
+
+                </android.support.design.widget.TextInputEditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/description_text_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/content_spacing"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:textColorHint="@color/half_black">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/description_text_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/description"
+                    android:inputType="textAutoComplete|textCapWords|textMultiLine"
+                    android:textColor="@color/black"
+                    android:ems="20"
+                    android:textColorHint="@color/colorSecondaryText"
+                    android:textSize="@dimen/input_field_size">
+                </android.support.design.widget.TextInputEditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/timePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/padding_16"
+                android:layout_marginStart="@dimen/padding_16"
+                android:layout_marginEnd="@dimen/padding_16"
+                android:layout_marginTop="@dimen/padding_16"
+                android:background="@drawable/transparent_button_background"
+                android:drawablePadding="20dp"
+                android:drawableStart="@drawable/ic_access_time_black_24dp"
+                android:elevation="10dp"
+                android:padding="@dimen/content_padding"
+                android:text="@string/set_time"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/half_black"
+                android:textSize="@dimen/text_view_regular_size"
+                tools:targetApi="lollipop"
+                tools:ignore="RtlCompat" />
+
+            <Button
+                android:id="@+id/datePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/padding_16"
+                android:layout_marginStart="@dimen/padding_16"
+                android:layout_marginEnd="@dimen/padding_16"
+                android:background="@drawable/transparent_button_background"
+                android:drawablePadding="20dp"
+                android:drawableStart="@drawable/ic_date_range_black_24dp"
+                android:elevation="10dp"
+                android:padding="@dimen/content_padding"
+                android:text="@string/set_date"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/half_black"
+                android:textSize="@dimen/text_view_regular_size"
+                tools:targetApi="lollipop"
+                tools:ignore="RtlCompat" />
+
+            <Button
+                android:id="@+id/imagePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/padding_16"
+                android:layout_marginStart="@dimen/padding_16"
+                android:layout_marginEnd="@dimen/padding_16"
+                android:layout_marginTop="@dimen/padding_8dp"
+                android:background="@drawable/transparent_button_background"
+                android:drawablePadding="20dp"
+                android:drawableStart="@drawable/ic_image_black_24dp"
+                android:elevation="10dp"
+                android:padding="@dimen/content_padding"
+                android:text="@string/upload_image"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/half_black"
+                android:textSize="@dimen/text_view_regular_size"
+                tools:targetApi="lollipop"
+                tools:ignore="RtlCompat" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/injury_nature_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="@color/red"
+                app:ms_arrowSize="@dimen/activity_horizontal_margin"
+                app:ms_floatingLabelColor="@color/red"
+                app:ms_floatingLabelText="@string/nature_injury"
+                app:ms_hint="@string/nature_injury"
+                app:ms_hintColor="@color/colorSecondaryText"
+                app:ms_multiline="true"
+                app:ms_hintView="@layout/spinner_item" />
+
+            <LinearLayout
+                android:id="@+id/vehicle_data_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_grey"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/padding_16"
+                android:paddingBottom="@dimen/padding_16"
+                android:paddingEnd="@dimen/padding_16"
+                android:paddingStart="@dimen/padding_16">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/vehicle_details"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/vehicle_plate_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:textColorHint="@color/half_black">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/vehicle_plate_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/vehicle_plate_No"
+                    android:inputType="textAutoComplete|textCapWords"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorSecondaryText"
+                    android:textSize="@dimen/input_field_size">
+
+                </android.support.design.widget.TextInputEditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/vehicle_model_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_16"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:textColorHint="@color/half_black">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/vehicle_model_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/vehicle_model"
+                    android:inputType="textAutoComplete|textCapWords"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorSecondaryText"
+                    android:textSize="@dimen/input_field_size">
+
+                </android.support.design.widget.TextInputEditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/vehicle_damage_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="@color/red"
+                app:ms_arrowSize="@dimen/activity_horizontal_margin"
+                app:ms_floatingLabelColor="@color/red"
+                app:ms_floatingLabelText="@string/damage_to_vehicle"
+                app:ms_hint="@string/damage_to_vehicle"
+                app:ms_hintColor="@color/colorSecondaryText"
+                app:ms_multiline="true"
+                app:ms_hintView="@layout/spinner_item" />
+
+            <LinearLayout
+                android:id="@+id/personal_data_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_grey"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/padding_16"
+                android:paddingBottom="@dimen/padding_16"
+                android:paddingEnd="@dimen/padding_16"
+                android:paddingStart="@dimen/padding_16">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/personal_details"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary" />
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/reporterName_text_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/content_spacing"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:textColorHint="@color/half_black">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/reporterName_text_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Reporter_name"
+                    android:inputType="textAutoComplete|textCapWords"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorSecondaryText"
+                    android:textSize="@dimen/input_field_size">
+
+                </android.support.design.widget.TextInputEditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/phoneNo_text_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/content_spacing"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/padding_16"
+                android:textColorHint="@color/half_black">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/phoneNo_text_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/phone_number_label"
+                    android:inputType="textAutoComplete|textCapWords"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorSecondaryText"
+                    android:textSize="@dimen/input_field_size">
+
+                </android.support.design.widget.TextInputEditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/send_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/padding_16"
+                android:layout_marginStart="@dimen/padding_16"
+                android:layout_marginEnd="@dimen/padding_16"
+                android:layout_marginTop="@dimen/padding_16"
+                android:background="@drawable/transparent_alert_button_background"
+                android:elevation="10dp"
+                android:padding="@dimen/content_padding"
+                android:text="@string/send_report"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_view_regular_size"
+                tools:targetApi="lollipop"
+                tools:ignore="RtlCompat" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

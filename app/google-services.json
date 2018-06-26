@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "374581372856",
+    "firebase_url": "https://accidenta-f90a9.firebaseio.com",
+    "project_id": "accidenta-f90a9",
+    "storage_bucket": "accidenta-f90a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374581372856:android:0d7aa9c548bc7e44",
+        "android_client_info": {
+          "package_name": "com.ofoegbuvgmail.accidentreport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "374581372856-6mcb8caujrvjp3af15vpa3g9fltbun8c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ofoegbuvgmail.accidentreport",
+            "certificate_hash": "aa272e3bfc04864a79128d1366ae2edb4057f410"
+          }
+        },
+        {
+          "client_id": "374581372856-7t9uk2nallnh6fnjd8ae4mgqnv2aius9.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "374581372856-7t9uk2nallnh6fnjd8ae4mgqnv2aius9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3_YfKk_8qz-Fle9UNQOVCvZUnfaf_BYg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "374581372856-7t9uk2nallnh6fnjd8ae4mgqnv2aius9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

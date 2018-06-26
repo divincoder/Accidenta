@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.SignInActivity">
+
+    <include layout="@layout/app_bar_main" />
+
+    <LinearLayout
+        android:id="@+id/container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="@dimen/big_padding"
+            app:srcCompat="@drawable/ic_car_collision"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/roboto_bold_italic"
+            android:text="@string/accidenta"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="@dimen/text_view_large_size" />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:visibility="invisible"
+            app:SpinKit_Color="@android:color/holo_red_dark"/>
+
+        <Button
+            android:id="@+id/sign_in_with_google_button"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/transparent_button_background"
+            android:drawablePadding="20dp"
+            android:drawableStart="@drawable/ic_search"
+            android:elevation="10dp"
+            android:padding="@dimen/content_padding"
+            android:text="@string/sign_in_with_google"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_view_small_size"
+            tools:targetApi="lollipop"
+            tools:ignore="RtlCompat" />
+
+        <Button
+            android:id="@+id/sign_in_with_phone_button"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/transparent_button_background"
+            android:drawablePadding="20dp"
+            android:drawableStart="@drawable/ic_phone_black_24dp"
+            android:elevation="@dimen/content_padding"
+            android:padding="@dimen/content_padding"
+            android:text="@string/sign_in_with_phone"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_view_small_size"
+            tools:targetApi="lollipop"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
